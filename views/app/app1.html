@@ -1,0 +1,80 @@
+{{template "starter.html"}}
+{{ define "style" }}
+    <style>
+        .box {
+            border: 1px solid;
+            padding: 20px 0px 0px 0px;
+            height: 275px;
+            /*position: relative;*/
+            /*float: left;*/
+            /*margin-left: 18px;*/
+            margin-top: 18px;
+        }
+    </style>
+{{ end }}
+
+{{ define "content" }}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="row card-box">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <ul class="nav nav-tabs tabs">
+                            <li class="active tab">
+                                <a href="#tab0" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-home"></i></span>
+                                    <span class="hidden-xs">公 有</span>
+                                </a>
+                            </li>
+                            <li class="tab">
+                                <a href="#tab1" data-toggle="tab" aria-expanded="false">
+                                    <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                    <span class="hidden-xs">私 有</span>
+                                </a>
+                            </li>
+                            <li class="tab">
+                                <a href="#tab2" data-toggle="tab" aria-expanded="true">
+                                    <span class="visible-xs"><i class="fa fa-envelope-o"></i></span>
+                                    <span class="hidden-xs">收 藏</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content" style="padding-top: 72px">
+                    <div class="tab-pane active" id="tab0">
+
+
+                    </div>
+                    <div class="tab-pane" id="tab1">
+                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}
+
+
+{{ define "script" }}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var str = "<div class='box'><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p></div>"
+            var str = "<div class='col-md-3'>" +
+                "           <div class='box'>" +
+                "               <div style='height: 50px;margin-top: 204px;border-top: 1px solid'><button class='btn btn-info' style='float: right'>button</button></div>" +
+                "           </div>" +
+                "       </div>"
+            $("#tab0").html("<div>"+str+str+str+str+str+str+str+str+str+str+str+"</div>")
+        })
+    </script>
+{{ end }}
+
+
